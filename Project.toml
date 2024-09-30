@@ -7,3 +7,9 @@ version = "0.1.0"
 Turing = "fce5fe82-1a69-5db0-8435-530cda43e40d"        # For probabilistic programming
 StatsPlots = "f3b207a7-9fa1-5c79-82b3-8d84c6a27b59"    # For statistical plotting
 Distributions = "31c24e10-1b62-5c27-9a4e-bccf83c8c1b8" # Distributions package
+
+[compat]
+julia = "1.6"
+Turing = "0.23"  
+StatsPlots = "0.14" 
+Distributions = "0.24"  
