@@ -1,6 +1,6 @@
 [package]
 name = "Turing"
-uuid = "---"
+uuid = "1c2b4b39-ab0a-4f59-bb42-4948fb304887"
 version = "0.1.0"
 
 [deps]
