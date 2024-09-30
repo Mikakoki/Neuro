@@ -3,10 +3,11 @@
 # Update conda to the latest version (optional)
 conda update -n base -c conda-forge conda -y || echo "Could not update conda. Continuing with build."
 
-# Install IJulia and other Julia packages
+# Install Julia packages (without IJulia)
 julia -e 'using Pkg; 
            Pkg.activate("."); 
-           Pkg.add("IJulia"); 
-           Pkg.add("Distributions");  # Explicitly add Distributions
+           Pkg.add("Distributions"); 
+           Pkg.add("Turing"); 
+           Pkg.add("StatsPlots");  # Add any other packages you need
            Pkg.instantiate(); 
            Pkg.resolve()'  # Resolve and update the manifest
