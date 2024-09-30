@@ -1,6 +1,0 @@
-name: my-julia-env
-channels:
-  - conda-forge
-dependencies:
-  - julia=1.6
- 
