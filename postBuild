@@ -1,3 +1,6 @@
 #!/bin/bash
+# Update conda to the latest version
+conda update -n base -c conda-forge conda -y
+
 # Install Julia packages using Pkg
 julia -e 'using Pkg; Pkg.add("IJulia"); Pkg.activate("."); Pkg.instantiate()'
