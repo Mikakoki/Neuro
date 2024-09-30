@@ -1,6 +1,12 @@
 #!/bin/bash
-# Update conda to the latest version
-conda update -n base -c conda-forge conda -y
 
-# Install Julia packages using Pkg
-julia -e 'using Pkg; Pkg.add("IJulia"); Pkg.activate("."); Pkg.instantiate()'
+# Update conda to the latest version (optional)
+conda update -n base -c conda-forge conda -y || echo "Could not update conda. Continuing with build."
+
+# Install IJulia and other Julia packages
+julia -e 'using Pkg; 
+           Pkg.activate("."); 
+           Pkg.add("IJulia"); 
+           Pkg.add("Distributions");  # Explicitly add Distributions
+           Pkg.instantiate(); 
+           Pkg.resolve()'  # Resolve and update the manifest
