@@ -3,4 +3,4 @@ channels:
   - conda-forge
 dependencies:
   - julia=1.6
-  - IJulia  # Ensure the IJulia package is included
+ 
