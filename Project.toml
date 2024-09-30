@@ -1,0 +1,9 @@
+[package]
+name = "Turing"
+uuid = "---"
+version = "0.1.0"
+
+[deps]
+Turing = "fce5fe82-1a69-5db0-8435-530cda43e40d"      # For probabilistic programming
+StatsPlots = "f3b207a7-9fa1-5c79-82b3-8d84c6a27b59" # For statistical plotting
+Statistics = "10745b16-4c9e-5e89-8a98-6b6c1fbc91e5"  # For basic statistics functions
